@@ -1,8 +1,3 @@
-# Abin's Personal Website — abinacharya.github.io
-
-A Markdown-based personal site built with **Jekyll** and the
-**Minimal Mistakes** theme (loaded remotely — nothing to install for
-deployment). Every page is a plain `.md` file you edit like a text document.
 
 ## Project structure
 
@@ -22,10 +17,10 @@ abinacharya.github.io/
 │   └── resume.md           # Embedded + downloadable resume PDF
 ├── assets/
 │   ├── images/
-│   │   └── home.svg        # Placeholder hero image (see "Add your gif")
+│   │   └── home.svg        
 │   └── docs/
 │       └── Abin_Acharya_Resume.pdf
-├── Gemfile                 # Only for optional local preview
+├── Gemfile                 
 └── README.md
 ```
 
@@ -68,27 +63,7 @@ repo `<username>.github.io` and the site lives at that URL instead.)
 
 ### 2. Upload the source code
 
-**Option A — command line:**
-```bash
-cd path/to/this/folder
-git init
-git add .
-git commit -m "Initial portfolio website"
-git branch -M main
-git remote add origin https://github.com/abinacharya/abinacharya.github.io.git
-git push -u origin main
-```
 
-**Option B — browser upload:** on the new repo page, click
-"uploading an existing file", drag in all the folder contents
-(keeping the structure), and commit.
-
-### 3. Enable GitHub Pages
-1. Repo → **Settings → Pages**
-2. "Build and deployment": Source = **Deploy from a branch**,
-   Branch = **main**, Folder = **/ (root)** → **Save**
-3. GitHub now runs Jekyll automatically on every push — you can watch the
-   build under the repo's **Actions** tab.
 
 ### 4. Visit your site
 After the first build finishes (1–3 minutes):
