@@ -42,45 +42,10 @@ abinacharya.github.io/
 | Resume | replace `assets/docs/Abin_Acharya_Resume.pdf` (keep the same name) |
 | Add a page | copy any file in `_pages/`, change its `title` and `permalink`, add it to `_data/navigation.yml` |
 
-## Add your gif to the home page
-
-1. Copy your gif into `assets/images/` and rename it **home.gif**
-2. Open `index.md`. Delete the `![home](/assets/images/home.svg)` line and
-   uncomment the `home.gif` line below it (remove the `<!--` and `-->`).
-3. Commit and push — done.
-
-## Deploy to GitHub Pages
-
-Your GitHub username must be `abinacharya` for the site to live at
-`https://abinacharya.github.io`. (If your username is different, name the
-repo `<username>.github.io` and the site lives at that URL instead.)
-
-### 1. Create the repository
-1. Go to https://github.com/new
-2. Repository name: **abinacharya.github.io** (exactly)
-3. Visibility: **Public**
-4. Don't initialize with a README — click **Create repository**
-
-### 2. Upload the source code
 
 
 
-### 4. Visit your site
-After the first build finishes (1–3 minutes):
 
-**https://abinacharya.github.io**
 
-Every future `git push` to `main` rebuilds and redeploys automatically.
 
-## Preview locally (optional)
 
-GitHub builds the site for you, so this is never required. If you want a
-live preview while editing: install Ruby, then
-
-```bash
-gem install bundler
-bundle install
-bundle exec jekyll serve
-```
-
-and open http://localhost:4000.
