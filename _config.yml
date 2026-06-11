@@ -1,0 +1,62 @@
+# =====================================================================
+# _config.yml — main site settings (same setup as Minimal Mistakes)
+#
+# THIS IS THE FIRST FILE TO EDIT: site title, tagline, your name,
+# theme colors (skin), and social/footer links all live here.
+#
+# NOTE: after changing this file you must re-push to GitHub (or restart
+# the local server) — Jekyll only reads _config.yml at build time.
+# =====================================================================
+
+# ---- Theme (loaded remotely from GitHub — nothing to install) ----
+remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+
+# CHANGE COLORS HERE: pick one skin and re-deploy.
+# Options: "default", "air", "aqua", "contrast", "dark", "dirt",
+#          "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin: "default"
+
+# ---- Site identity (EDIT THESE) ----
+locale: "en-US"
+title: "Abin's Website"
+subtitle: "About me, my research, and what I'm up to."   # line under the title
+name: "Abin Acharya"
+description: "Personal website of Abin Acharya — CS PhD student at UCCS working on NLP, multi-agent systems, and reinforcement learning."
+url: "https://abinacharya.github.io"   # change if your username differs
+repository: "abinacharya/abinacharya.github.io"
+
+# ---- Build settings (rarely edited) ----
+markdown: kramdown
+plugins:
+  - jekyll-include-cache
+  - jekyll-remote-theme
+include:
+  - _pages
+
+# ---- Footer "Connect with me on socials" links (EDIT THESE) ----
+# icon uses Font Awesome class names (the theme loads Font Awesome).
+# Delete a block to remove a link; reorder blocks to reorder icons.
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/abin-coder"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/abinach1/"
+    - label: "Google Scholar"
+      icon: "fas fa-fw fa-graduation-cap"
+      url: "https://scholar.google.com/"   # TODO: your Scholar profile URL
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:aachary2@uccs.edu"
+
+# ---- Page defaults: every page uses the clean "single" layout,
+#      no author sidebar (box-free look). ----
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: false
