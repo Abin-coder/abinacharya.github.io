@@ -13,7 +13,7 @@ permalink: /
      home.gif line (remove the surrounding arrows and dashes).
      =============================================================== -->
 
-![home](/assets/images/home.svg)
+![home](/assets/images/home.gif)
 
 <!-- ![home](/assets/images/home.gif) -->
 
@@ -26,8 +26,8 @@ Colorado Springs, where I research NLP, multi-agent systems, and
 reinforcement learning. Outside the lab, I enjoy cricket, badminton,
 photography, music, travel, and reading.
 
-I'm always happy to connect — whether it's about research, collaboration,
-or just a good conversation about interesting ideas.
+I'm always happy to connect whether it's about research, collaboration,
+or just a good conversation about interesting ideas and anime.
 
 ## Connect with me on socials
 
