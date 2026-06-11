@@ -8,7 +8,7 @@ permalink: /research/
 My research sits at the intersection of natural language processing,
 multi-agent systems, and reinforcement learning. I'm especially interested
 in how multiple specialized LLM agents can collaborate on complex language
-tasks — and how reinforcement learning can be used to optimize that
+tasks  and how reinforcement learning can be used to optimize that
 collaboration.
 
 I'm a PhD student in the
