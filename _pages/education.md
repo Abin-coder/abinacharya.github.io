@@ -11,8 +11,8 @@ permalink: /education/
 
 *University of Colorado, Colorado Springs (UCCS) — Colorado Springs, CO · Aug 2025 – Present*
 
-- GPA: 3.85 / 4.0 — Fully funded PhD scholarship
-- Focus: AI, machine learning, deep learning, NLP, reinforcement learning, explainable AI
+- GPA: 3.92 / 4.0 — Fully funded PhD scholarship
+- Focus: Multiagent systems, NLP, reinforcement learning, explainable AI
 - Relevant coursework: Artificial Neural Networks, Reinforcement Learning, Operating Systems, Database Designs
 
 ### Bachelor of Computer Engineering
