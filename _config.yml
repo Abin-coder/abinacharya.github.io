@@ -22,8 +22,8 @@ title: "Abin's Website"
 subtitle: "About me, my research, and what I'm up to."   # line under the title
 name: "Abin Acharya"
 description: "Personal website of Abin Acharya — CS PhD student at UCCS working on NLP, multi-agent systems, and reinforcement learning."
-url: "https://abinacharya.github.io"   # change if your username differs
-repository: "abinacharya/abinacharya.github.io"
+url: "https://abin-coder.github.io"
+repository: "abin-coder/abin-coder.github.io"
 
 # ---- Build settings (rarely edited) ----
 markdown: kramdown
