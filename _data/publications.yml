@@ -1,0 +1,21 @@
+# Publications, newest first.
+#
+# Every field except `title` is optional — leave one out and it just disappears.
+#   status:  a small badge, e.g. "Under review", "To appear", "Preprint"
+#   links:   any number of buttons (PDF, arXiv, Code, Poster, Slides, DOI ...)
+#
+# The page shows a placeholder while this list is empty. Uncomment the example
+# below (and delete these instructions) once you have something to list.
+#
+# - title: "Your paper title goes here"
+#   authors: "Abin Acharya, Co-Author, Jugal Kalita"
+#   venue: "Proceedings of SomeConference (ACL 2027)"
+#   year: 2027
+#   status: "Under review"
+#   links:
+#     - name: PDF
+#       url: /assets/files/paper.pdf
+#     - name: arXiv
+#       url: https://arxiv.org/abs/0000.00000
+#     - name: Code
+#       url: https://github.com/abin-coder/repo

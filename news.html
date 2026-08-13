@@ -1,0 +1,15 @@
+---
+layout: page
+title: News
+permalink: /news/
+intro: Everything, newest first. Add items in `_data/news.yml`.
+---
+
+<ul class="news-list">
+  {% for item in site.data.news %}
+  <li class="news-item">
+    <div class="news-date">{{ item.date }}</div>
+    <div class="news-body">{{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+  </li>
+  {% endfor %}
+</ul>

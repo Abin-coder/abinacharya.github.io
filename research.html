@@ -1,0 +1,71 @@
+---
+layout: page
+title: Research
+permalink: /research/
+intro: What I work on, and why.
+---
+
+<section class="prose">
+  <p>
+    My research sits at the intersection of natural language processing, multi-agent systems, and
+    reinforcement learning. I'm especially interested in how multiple specialized LLM agents can
+    collaborate on complex language tasks, and how reinforcement learning can be used to optimize
+    that collaboration rather than leaving it to hand-written prompts and fixed pipelines.
+  </p>
+</section>
+
+<!-- Add, remove or reorder these blocks freely — they are plain HTML. -->
+<section>
+  <h2 class="section-title">Current directions</h2>
+
+  <div class="entry">
+    <div class="entry-head">
+      <h3 class="entry-title">Multi-agent pipelines for long-document summarization</h3>
+    </div>
+    <p class="entry-where">
+      Splitting summarization into specialized roles — selecting what matters, drafting, critiquing,
+      refining — and studying how those agents should be coordinated when a document is far longer
+      than any single context window.
+    </p>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <h3 class="entry-title">Reinforcement learning for LLM agents</h3>
+    </div>
+    <p class="entry-where">
+      Using RL to fine-tune agent behavior and coordination policies, so that a system learns which
+      agent to call, on what input, and when to stop — instead of following a fixed script.
+    </p>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <h3 class="entry-title">Adaptive intelligent tutoring</h3>
+    </div>
+    <p class="entry-where">
+      Sequencing practice problems with deep RL so that the next question matches a student's current
+      mastery, combined with LLM-generated hints and explanations.
+    </p>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <h3 class="entry-title">Explainable and trustworthy AI</h3>
+    </div>
+    <p class="entry-where">
+      Making model decisions inspectable — through feature attribution, rule-based explanations, and
+      failure detection — so multi-agent systems can be debugged and trusted, not just benchmarked.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Lab</h2>
+  <p class="prose">
+    I'm a member of the <a href="{{ site.author.lab_url }}">{{ site.author.lab }}</a> at UCCS, led by
+    <a href="{{ site.author.advisor_url }}">{{ site.author.advisor }}</a>. If you're a student at UCCS
+    interested in NLP or multi-agent systems, I'm always happy to talk —
+    <a href="mailto:{{ site.contact.email }}">email me</a>.
+  </p>
+</section>

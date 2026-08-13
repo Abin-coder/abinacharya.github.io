@@ -1,17 +1,5 @@
-# =====================================================================
-# Gemfile — only needed for previewing the site on YOUR OWN computer.
-# GitHub Pages ignores this and builds the site itself, so you can
-# deploy without ever installing Ruby.
-#
-# Local preview (optional):
-#   1. Install Ruby (ruby-lang.org)
-#   2. gem install bundler
-#   3. bundle install
-#   4. bundle exec jekyll serve
-#   5. Open http://localhost:4000
-# =====================================================================
+# Only needed if you want to preview the site on your own laptop.
+# GitHub Pages does not read this file's dev extras — it builds the site for you.
 source "https://rubygems.org"
-
 gem "github-pages", group: :jekyll_plugins
-gem "jekyll-include-cache", group: :jekyll_plugins
-gem "webrick"   # needed for `jekyll serve` on Ruby 3+
+gem "webrick"

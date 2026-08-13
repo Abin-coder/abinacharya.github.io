@@ -1,0 +1,22 @@
+# Newest first. Add a new item by copying the three lines below to the top.
+# `text` accepts Markdown, so **bold** and [links](https://example.com) work.
+
+- date: Aug 2026
+  text: >-
+    Started the Fall semester as a **Graduate Teaching Assistant** for
+    Advanced Object-Oriented Programming at UCCS.
+
+- date: Aug 2025
+  text: >-
+    Joined the **LINC Lab** at UCCS as a PhD student in Computer Science,
+    advised by Dr. Jugal Kalita.
+
+- date: Aug 2025
+  text: >-
+    Awarded a **fully funded PhD scholarship** by the University of Colorado,
+    Colorado Springs.
+
+- date: Aug 2023
+  text: >-
+    Graduated with a **Bachelor of Computer Engineering** from the Institute of
+    Engineering, Tribhuvan University, Kathmandu.

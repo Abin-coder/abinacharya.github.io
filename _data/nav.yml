@@ -1,0 +1,14 @@
+# The top navigation bar. Reorder, rename, add or delete freely —
+# the header and mobile menu both read from this list.
+- name: About
+  url: /
+- name: Research
+  url: /research/
+- name: Publications
+  url: /publications/
+- name: Projects
+  url: /projects/
+- name: CV
+  url: /cv/
+- name: News
+  url: /news/

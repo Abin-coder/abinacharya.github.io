@@ -1,0 +1,7 @@
+---
+layout: default
+---
+<h1 class="page-title">{{ page.title }}</h1>
+{% if page.intro %}<p class="page-intro">{{ page.intro | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
+
+{{ content }}

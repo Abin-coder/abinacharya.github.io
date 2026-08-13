@@ -1,0 +1,70 @@
+---
+layout: page
+title: CV
+permalink: /cv/
+intro: Education, experience, awards, and skills. Everything here comes from `_data/cv.yml`.
+---
+
+{% if site.contact.cv %}
+<p style="margin-top:-20px"><a class="chip" href="{{ site.contact.cv | relative_url }}">Download CV (PDF)</a></p>
+{% endif %}
+
+<section>
+  <h2 class="section-title">Education</h2>
+  {% for item in site.data.cv.education %}
+  <div class="entry">
+    <div class="entry-head">
+      <h3 class="entry-title">{{ item.title }}</h3>
+      <span class="entry-when">{{ item.when }}</span>
+    </div>
+    <p class="entry-where">{{ item.where }}{% if item.location %} — {{ item.location }}{% endif %}</p>
+    {% if item.points %}
+    <ul class="entry-list">
+      {% for point in item.points %}<li>{{ point }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+  {% endfor %}
+</section>
+
+<section>
+  <h2 class="section-title">Experience</h2>
+  {% for item in site.data.cv.experience %}
+  <div class="entry">
+    <div class="entry-head">
+      <h3 class="entry-title">{{ item.title }}</h3>
+      <span class="entry-when">{{ item.when }}</span>
+    </div>
+    <p class="entry-where">{{ item.where }}{% if item.location %} — {{ item.location }}{% endif %}</p>
+    {% if item.points %}
+    <ul class="entry-list">
+      {% for point in item.points %}<li>{{ point }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+  {% endfor %}
+</section>
+
+<section>
+  <h2 class="section-title">Honors &amp; awards</h2>
+  <ul class="news-list">
+    {% for award in site.data.cv.awards %}
+    <li class="news-item">
+      <div class="news-date">{{ award.when }}</div>
+      <div class="news-body">{{ award.name }}</div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section>
+  <h2 class="section-title">Skills</h2>
+  <div class="skill-grid">
+    {% for skill in site.data.cv.skills %}
+    <div class="skill-group">
+      <h3>{{ skill.group }}</h3>
+      <p>{{ skill.items }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>

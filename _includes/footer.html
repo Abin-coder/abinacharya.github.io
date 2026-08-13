@@ -1,0 +1,12 @@
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© {{ site.time | date: "%Y" }} {{ site.author.name }}</span>
+    <div class="footer-links">
+      {% if site.contact.email %}<a href="mailto:{{ site.contact.email }}">Email</a>{% endif %}
+      {% if site.contact.github %}<a href="{{ site.contact.github }}">GitHub</a>{% endif %}
+      {% if site.contact.linkedin %}<a href="{{ site.contact.linkedin }}">LinkedIn</a>{% endif %}
+      {% if site.contact.scholar %}<a href="{{ site.contact.scholar }}">Google Scholar</a>{% endif %}
+      {% if site.contact.cv %}<a href="{{ site.contact.cv | relative_url }}">CV (PDF)</a>{% endif %}
+    </div>
+  </div>
+</footer>

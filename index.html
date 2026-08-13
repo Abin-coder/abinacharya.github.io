@@ -1,0 +1,75 @@
+---
+layout: default
+title: About
+permalink: /
+---
+
+<div class="hero">
+  <img class="hero-photo"
+       src="{{ site.author.photo | relative_url }}"
+       alt="{{ site.author.name }}"
+       onerror="this.outerHTML='&lt;div class=&quot;hero-photo-fallback&quot; aria-hidden=&quot;true&quot;&gt;{{ site.author.initials }}&lt;/div&gt;'">
+
+  <div>
+    <h1 class="hero-name">{{ site.author.name }}</h1>
+    <p class="hero-role">{{ site.author.role }}</p>
+    <p class="hero-affil">
+      <a href="{{ site.author.affiliation_url }}">{{ site.author.affiliation }}</a>
+      · Advised by <a href="{{ site.author.advisor_url }}">{{ site.author.advisor }}</a>
+    </p>
+    {% include contact.html %}
+  </div>
+</div>
+
+<!-- ===== Your bio. Plain HTML — edit the sentences directly. ============= -->
+<section class="prose">
+  <p>
+    Hello! I'm a PhD student in Computer Science at the
+    <a href="{{ site.author.affiliation_url }}">University of Colorado, Colorado Springs</a>,
+    where I work in the <a href="{{ site.author.lab_url }}">Language, Information and Computation (LINC) Lab</a>
+    with <a href="{{ site.author.advisor_url }}">{{ site.author.advisor }}</a>. My research sits at the
+    intersection of <strong>natural language processing</strong>, <strong>multi-agent systems</strong>,
+    and <strong>reinforcement learning</strong> — in particular, how several specialized LLM agents can
+    collaborate on hard language tasks, and how reinforcement learning can be used to tune that
+    collaboration.
+  </p>
+  <p>
+    I also teach. As a Graduate Teaching Assistant in the CS department I support 150+ students
+    across Intro to Software Engineering, Advanced Object-Oriented Programming, and Graduate
+    Advanced Software Engineering.
+  </p>
+  <p>
+    I'm originally from Nepal. Before moving to Colorado I earned my Bachelor of Computer
+    Engineering from the Institute of Engineering, Tribhuvan University in Kathmandu, and spent
+    two years teaching and running IT infrastructure at a school in the city.
+  </p>
+  <p>
+    Outside research you'll find me playing cricket, watching anime, taking photographs, listening
+    to music, traveling, picking up new languages, or reading. Feel free to
+    <a href="mailto:{{ site.contact.email }}">get in touch</a>.
+  </p>
+</section>
+
+<!-- ===== Recent news — add items in _data/news.yml ======================= -->
+<section>
+  <h2 class="section-title">
+    Recent news
+    <a class="more" href="{{ '/news/' | relative_url }}">All news →</a>
+  </h2>
+  <ul class="news-list">
+    {% for item in site.data.news limit: 5 %}
+    <li class="news-item">
+      <div class="news-date">{{ item.date }}</div>
+      <div class="news-body">{{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}</div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<!-- ===== Interest tags — edit _data/interests.yml ======================== -->
+<section>
+  <h2 class="section-title">Research interests</h2>
+  <div class="tag-cloud">
+    {% for tag in site.data.interests %}<span class="tag">{{ tag }}</span>{% endfor %}
+  </div>
+</section>

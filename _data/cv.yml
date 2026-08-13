@@ -1,0 +1,59 @@
+# Everything on the CV page: education, experience, awards, skills.
+
+education:
+  - title: Ph.D. in Computer Science (M.S. earned en route)
+    where: University of Colorado, Colorado Springs (UCCS)
+    location: Colorado Springs, CO
+    when: Aug 2025 – Present
+    points:
+      - "GPA: 3.92 / 4.0 — fully funded PhD scholarship"
+      - "Focus: multi-agent systems, NLP, reinforcement learning, explainable AI"
+      - "Coursework: Artificial Neural Networks, Reinforcement Learning, Operating Systems, Database Design"
+
+  - title: Bachelor of Computer Engineering
+    where: Institute of Engineering (IOE), Tribhuvan University
+    location: Kathmandu, Nepal
+    when: Aug 2018 – Aug 2023
+    points:
+      - "GPA: 3.83 / 4.0 — full merit scholarship"
+
+experience:
+  - title: Graduate Teaching Assistant
+    where: Department of Computer Science, UCCS
+    location: Colorado Springs, CO
+    when: Aug 2025 – Present
+    points:
+      - Support 150+ students across three courses (Intro to Software Engineering, Advanced OOP with C#/.NET, Graduate Advanced Software Engineering) through office hours, grading, and lab facilitation.
+      - Earned positive student evaluations for clear, structured mentorship and responsive academic support.
+
+  - title: IT Assistant
+    where: Gurukul Secondary School
+    location: Kathmandu, Nepal
+    when: Sep 2023 – May 2025
+    points:
+      - Administered school-wide IT infrastructure, including network maintenance, device management, and software updates.
+      - Provided first-line technical support to staff and implemented security protocols.
+
+awards:
+  - name: Fully Funded Ph.D. Scholarship — University of Colorado, Colorado Springs
+    when: 2025 – Present
+  - name: Full Undergraduate Merit Scholarship — Institute of Engineering (IOE)
+    when: 2018 – 2023
+  - name: Mahatma Gandhi Scholarship — Indian Embassy
+    when: 2016 – 2018
+  - name: Licensed Professional Engineer — Nepal Engineering Council (NEC)
+    when: ""
+
+skills:
+  - group: Languages
+    items: Python, C/C++, SQL (SQLite, MySQL), JavaScript, HTML/CSS
+  - group: ML / AI frameworks
+    items: PyTorch, TensorFlow, Keras, Scikit-learn, Hugging Face Transformers, SHAP, LIME
+  - group: Data & visualization
+    items: NumPy, Pandas, Matplotlib, Seaborn, Power BI
+  - group: Tools & platforms
+    items: Git/GitHub, Docker, Linux/Unix, Google Colab, Jupyter, LaTeX, VS Code, Anaconda
+  - group: Web development
+    items: Django, PHP, JavaScript, RESTful APIs, SQLite, MySQL
+  - group: Teaching
+    items: Software Engineering, Object-Oriented Programming (C#/.NET), lab facilitation, grading, office hours

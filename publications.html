@@ -1,0 +1,32 @@
+---
+layout: page
+title: Publications
+permalink: /publications/
+intro: Papers, preprints, and work in progress. Also on [Google Scholar](https://scholar.google.com/).
+---
+
+{% if site.data.publications and site.data.publications.size > 0 %}
+  {% for pub in site.data.publications %}
+  <div class="entry">
+    <div class="entry-head">
+      <h3 class="entry-title">
+        {{ pub.title }}{% if pub.status %}<span class="status">{{ pub.status }}</span>{% endif %}
+      </h3>
+      {% if pub.year %}<span class="entry-when">{{ pub.year }}</span>{% endif %}
+    </div>
+    {% if pub.authors %}<p class="entry-where">{{ pub.authors }}</p>{% endif %}
+    {% if pub.venue %}<p class="entry-meta">{{ pub.venue }}</p>{% endif %}
+    {% if pub.links %}
+    <div class="entry-links">
+      {% for link in pub.links %}<a class="pill" href="{{ link.url | relative_url }}">{{ link.name }}</a>{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+{% else %}
+  <p class="callout">
+    Nothing listed here yet — a few papers are in preparation and under review. Once something is
+    public, it will show up on this page and on
+    <a href="{{ site.contact.scholar }}">Google Scholar</a>.
+  </p>
+{% endif %}

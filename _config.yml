@@ -1,62 +1,44 @@
-# =====================================================================
-# _config.yml — main site settings (same setup as Minimal Mistakes)
-#
-# THIS IS THE FIRST FILE TO EDIT: site title, tagline, your name,
-# theme colors (skin), and social/footer links all live here.
-#
-# NOTE: after changing this file you must re-push to GitHub (or restart
-# the local server) — Jekyll only reads _config.yml at build time.
-# =====================================================================
+# =============================================================================
+#  EDIT ME FIRST — everything about "who you are" lives here.
+#  After changing this file, GitHub Pages rebuilds the site in ~1 minute.
+# =============================================================================
 
-# ---- Theme (loaded remotely from GitHub — nothing to install) ----
-remote_theme: "mmistakes/minimal-mistakes@4.26.2"
-
-# CHANGE COLORS HERE: pick one skin and re-deploy.
-# Options: "default", "air", "aqua", "contrast", "dark", "dirt",
-#          "neon", "mint", "plum", "sunrise"
-minimal_mistakes_skin: "default"
-
-# ---- Site identity (EDIT THESE) ----
-locale: "en-US"
-title: "Abin's Website"
-subtitle: "About me, my research, and what I'm up to."   # line under the title
-name: "Abin Acharya"
-description: "Personal website of Abin Acharya — CS PhD student at UCCS working on NLP, multi-agent systems, and reinforcement learning."
+title: Abin Acharya
+tagline: PhD student in Computer Science, UCCS
+description: >-
+  Personal website of Abin Acharya — CS PhD student at UCCS working on
+  natural language processing, multi-agent systems, and reinforcement learning.
 url: "https://abin-acharya.github.io"
-   repository: "abin-acharya/abin-acharya.github.io"
+baseurl: ""
+lang: en
 
-# ---- Build settings (rarely edited) ----
+# --- Shown in the hero block on the home page --------------------------------
+author:
+  name: Abin Acharya
+  role: PhD Student in Computer Science
+  photo: /assets/img/profile.jpg      # drop your photo here (square works best)
+  initials: AA                        # shown if the photo file is missing
+  affiliation: University of Colorado, Colorado Springs
+  affiliation_url: https://www.uccs.edu/
+  advisor: Dr. Jugal Kalita
+  advisor_url: https://scholar.google.com/citations?user=dXITneMAAAAJ&hl=en
+  lab: LINC Lab
+  lab_url: https://labs.uccs.edu/linclab/
+
+# --- Contact links. Delete a line to hide that link everywhere. --------------
+contact:
+  email: aachary2@uccs.edu
+  github: https://github.com/abin-coder
+  linkedin: https://www.linkedin.com/in/abinach1/
+  scholar: https://scholar.google.com/            # TODO: replace with your real Scholar profile
+  cv: /assets/files/abin-acharya-cv.pdf           # put your PDF here
+
+# --- Build settings (leave these alone) --------------------------------------
 markdown: kramdown
 plugins:
-  - jekyll-include-cache
-  - jekyll-remote-theme
-include:
-  - _pages
-
-# ---- Footer "Connect with me on socials" links (EDIT THESE) ----
-# icon uses Font Awesome class names (the theme loads Font Awesome).
-# Delete a block to remove a link; reorder blocks to reorder icons.
-footer:
-  links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/abin-coder"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/abinach1/"
-    - label: "Google Scholar"
-      icon: "fas fa-fw fa-graduation-cap"
-      url: "https://scholar.google.com/"   # TODO: your Scholar profile URL
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope"
-      url: "mailto:aachary2@uccs.edu"
-
-# ---- Page defaults: every page uses the clean "single" layout,
-#      no author sidebar (box-free look). ----
-defaults:
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: single
-      author_profile: false
+  - jekyll-seo-tag
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
