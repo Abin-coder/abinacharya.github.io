@@ -4,6 +4,9 @@ title: About
 permalink: /
 ---
 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title and page.url != "/" %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }} · {{ site.tagline }}{% endif %}</title>
 <div class="hero">
   <img class="hero-photo"
        src="{{ site.author.photo | relative_url }}"
